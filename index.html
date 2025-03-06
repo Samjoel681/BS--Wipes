@@ -3,104 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website for Reusable Bamboo Wipes</title>
+    <title>EcoWipes E-commerce</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-white font-Poppins">
+<body class="bg-gray-50">
+    <header class="bg-green-500 text-white p-6">
+        <h1 class="text-3xl font-bold">EcoWipes</h1>
+        <nav class="mt-4">
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#products" class="hover:underline">Products</a></li>
+                <li><a href="#about" class="hover:underline">About Us</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <div class="relative">
-        <img src="https://placehold.co/1200x600" alt="High-resolution image of bamboo wipes" class="w-full h-auto">
-        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div class="text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold">Eco-Friendly Hygiene Starts Here!</h1>
-                <a href="#products" class="mt-4 inline-block bg-green-700 text-white py-2 px-6 rounded-full transition duration-300 hover:bg-green-800">Shop Now</a>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section id="home" class="bg-green-200 text-center p-20">
+            <h2 class="text-4xl font-bold">Sustainable, Reusable, and Travel-Friendly Wipes</h2>
+            <a href="#products" class="mt-6 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Shop Now</a>
+        </section>
 
-    <!-- Key Benefits Section -->
-    <div class="py-16 bg-beige text-center">
-        <h2 class="text-3xl font-semibold mb-8">Why Choose Us?</h2>
-        <div class="flex justify-around items-center">
-            <div class="flex flex-col items-center">
-                <i class="fas fa-leaf text-green-700 text-4xl"></i>
-                <p class="mt-2 text-lg">Sustainable</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <i class="fas fa-tint text-green-700 text-4xl"></i>
-                <p class="mt-2 text-lg">Odor-Free</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <i class="fas fa-plane text-green-700 text-4xl"></i>
-                <p class="mt-2 text-lg">Travel-Friendly</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Featured Products -->
-    <div id="products" class="py-16">
-        <h2 class="text-3xl font-semibold text-center mb-8">Featured Products</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
-            <div class="border rounded-lg p-4">
-                <img src="https://placehold.co/300x300" alt="Product image of bamboo wipes" class="w-full h-48 object-cover rounded">
-                <h3 class="mt-4 text-xl font-semibold">Bamboo Wipes - Single Pack</h3>
-                <p class="text-lg text-green-700">$9.99</p>
-                <button class="mt-2 bg-green-700 text-white py-2 px-4 rounded-full transition duration-300 hover:bg-green-800">Add to Cart</button>
-            </div>
-            <div class="border rounded-lg p-4">
-                <img src="https://placehold.co/300x300" alt="Product image of bamboo wipes" class="w-full h-48 object-cover rounded">
-                <h3 class="mt-4 text-xl font-semibold">Bamboo Wipes - 5-Pack</h3>
-                <p class="text-lg text-green-700">$39.99</p>
-                <button class="mt-2 bg-green-700 text-white py-2 px-4 rounded-full transition duration-300 hover:bg-green-800">Add to Cart</button>
-            </div>
-            <div class="border rounded-lg p-4">
-                <img src="https://placehold.co/300x300" alt="Product image of bamboo wipes" class="w-full h-48 object-cover rounded">
-                <h3 class="mt-4 text-xl font-semibold">Bamboo Wipes - 10-Pack</h3>
-                <p class="text-lg text-green-700">$69.99</p>
-                <button class="mt-2 bg-green-700 text-white py-2 px-4 rounded-full transition duration-300 hover:bg-green-800">Add to Cart</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subscription Offer -->
-    <div class="py-16 bg-beige text-center">
-        <h2 class="text-3xl font-semibold mb-4">Subscribe & Save 15%</h2>
-        <a href="#subscribe" class="mt-4 inline-block bg-green-700 text-white py-2 px-6 rounded-full transition duration-300 hover:bg-green-800">Subscribe Now</a>
-    </div>
-
-    <!-- Customer Reviews -->
-    <div class="py-16">
-        <h2 class="text-3xl font-semibold text-center mb-8">What Our Customers Say</h2>
-        <div class="flex justify-center">
-            <div class="w-full max-w-md">
-                <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <p class="italic">"These bamboo wipes are a game changer! I love how eco-friendly they are!"</p>
-                    <p class="mt-4 font-semibold">- Sarah L.</p>
+        <section id="products" class="p-10">
+            <h3 class="text-2xl font-bold text-center">Top Selling Products</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="border rounded-lg p-4">
+                    <img src="https://placehold.co/300x300" alt="Reusable Bamboo Wipe Pack" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold mt-2">Bamboo Wipes Pack</h4>
+                    <p class="text-gray-700">₹3,200</p>
+                    <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Add to Cart</button>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-lg mt-4">
-                    <p class="italic">"I take them everywhere! Perfect for my travels."</p>
-                    <p class="mt-4 font-semibold">- John D.</p>
+                <div class="border rounded-lg p-4">
+                    <img src="https://placehold.co/300x300" alt="Bamboo Wipes - Scented" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold mt-2">Scented Bamboo Wipes</h4>
+                    <p class="text-gray-700">₹3,500</p>
+                    <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Add to Cart</button>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-lg mt-4">
-                    <p class="italic">"No more wasteful wipes for me! Highly recommend."</p>
-                    <p class="mt-4 font-semibold">- Emily R.</p>
+                <div class="border rounded-lg p-4">
+                    <img src="https://placehold.co/300x300" alt="Bamboo Wipes - Antibacterial" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold mt-2">Antibacterial Bamboo Wipes</h4>
+                    <p class="text-gray-700">₹3,800</p>
+                    <button class="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Add to Cart</button>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-</body>
-</html>
+        <section class="p-10 bg-gray-100">
+            <h3 class="text-2xl font-bold text-center">Why Choose EcoWipes?</h3>
+            <div class="flex justify-around mt-6">
+                <div class="text-center">
+                    <i class="fas fa-leaf text-green-500 text-4xl"></i>
+                    <p class="mt-2">Odor-Free</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-recycle text-green-500 text-4xl"></i>
+                    <p class="mt-2">Eco-Friendly</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-green-500 text-4xl"></i>
+                    <p class="mt-2">Long-Lasting</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-10">
+            <h3 class="text-2xl font-bold text-center">Testimonials</h3>
+            <div class="mt-6">
+                <p class="text-center italic">"Switching to EcoWipes has changed my life! They are so convenient and environmentally friendly!" - Sarah</p>
+                <p class="text-center italic mt-4">"I love these wipes! They are perfect for my travels." - John</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-green-500 text-white p-6 text-center">
+        <p>&copy; 2023 EcoWipes. All rights reserved.</p>
+        <div class="mt-4">
+            <a href="#about" class="hover:underline">About Us</a> | 
+            <a href="#contact" class="hover:underline">Contact</a> | 
+            <a href="#privacy" class="hover:underline">Privacy Policy</a>
+        </div>
+    </footer>
 </body>
 </html>
